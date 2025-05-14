@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+  </style>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="flex items-center justify-between px-4 sm:px-6 md:px-8 py-4 max-w-7xl mx-auto">
+      <div class="text-[#1A1F4B] font-extrabold text-lg select-none">Startup 3</div>
+      <input type="checkbox" id="menu-toggle" class="hidden" />
+      <label for="menu-toggle" class="cursor-pointer md:hidden text-[#1A1F4B] text-xl">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul
+        class="menu-list absolute top-full left-0 w-full bg-white border-t border-gray-200 md:static md:flex md:space-x-8 md:border-0 md:top-[60px] md:bg-transparent md:w-auto  md:left-auto transition-all duration-300 ease-in-out max-h-0 overflow-hidden md:max-h-full"
+        id="menu">
+        <li><a href="#"
+            class="block px-4 py-3 text-[#1A1F4B] text-sm font-normal hover:underline md:inline md:p-0">Home</a></li>
+        <li><a href="#"
+            class="block px-4 py-3 text-[#1A1F4B] text-sm font-normal hover:underline md:inline md:p-0">Features</a>
+        </li>
+        <li><a href="#"
+            class="block px-4 py-3 text-[#1A1F4B] text-sm font-normal hover:underline md:inline md:p-0">Blog</a></li>
+        <li><a href="#"
+            class="block px-4 py-3 text-[#1A1F4B] text-sm font-normal hover:underline md:inline md:p-0">Shop</a></li>
+        <li>
+          <a href="#" class="block px-4 py-3 text-[#1A1F4B] text-sm font-normal hover:text-[#1A1F4B] md:inline md:p-0">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li class="border-t border-gray-200 md:border-0 md:flex md:items-center md:space-x-6 md:ml-6">
+          <a href="#" class="block px-4 py-3 text-[#1A1F4B] text-sm font-normal hover:underline md:inline md:p-0">Sign
+            In</a>
+        </li>
+        <li class="border-t border-gray-200 md:border-0 md:flex md:items-center">
+          <a href="#"
+            class="block bg-[#2F3EB1] text-white px-4 py-2 rounded-full text-sm font-normal text-center mx-4 my-3 md:mx-0 md:my-0 hover:bg-[#252f8a] transition-colors duration-200">Sign
+            Up</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+        thumbs-swiper=".mySwiper2" space-between="10" navigation="true">
+        <swiper-slide>
+          <div class=" w-3/4 text-start flex items-center justify-center">
+            <div class="flex w-full flex-col md:flex-row items-center justify-between ">
+              <div class="md:full ">
+                <h1 class="font-orbitron text-4xl sm:text-5xl md:text-6xl leading-tight text-gray-900">
+                  DRIVE YOUR
+                  <br />
+                  DREAM
+                </h1>
+                <p class="text-sm text-gray-500">
+                  Unlock Your Journey
+                  <a class="text-[#f7941d] underline hover:text-[#d67a14]" href="#">
+                    with Our Rental Cars
+                  </a>
+                </p>
+                <div class="flex items-center space-x-4">
+                  <a class="bg-[#f7941d] text-white text-xs font-semibold px-5 py-2 rounded-md hover:bg-[#e07c14] transition"
+                    href="#">
+                    FIND A CAR →
+                  </a>
+                  <a class="text-xs font-semibold text-gray-700 hover:text-[#f7941d]" href="#">
+                    LEARN MORE →
+                  </a>
+                </div>
+                <p class="text-[#f7941d] font-semibold text-lg mt-6">
+                  $13.00
+                  <span class="text-gray-400 font-normal text-xs">
+                    /Per Hours
+                  </span>
+                </p>
+              </div>
+              <div class="md:w-1/2 flex justify-center md:justify-end">
+                <img alt="Orange SUV car side view with gradient orange background"
+                  class="w-full max-w-md object-contain" height="250" src="/assets/images/pngwing.com (1).png"
+                  width="400" />
+                  <div class="chap1"></div>
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class=" w-3/4 text-start flex items-center justify-center">
+            <div class="flex w-full flex-col md:flex-row items-center justify-between ">
+              <div class="md:full ">
+                <h1 class="font-orbitron text-4xl sm:text-5xl md:text-6xl leading-tight text-gray-900">
+                  DRIVE YOUR
+                  <br />
+                  DREAM
+                </h1>
+                <p class="text-sm text-gray-500">
+                  Unlock Your Journey
+                  <a class="text-[#f7941d] underline hover:text-[#d67a14]" href="#">
+                    with Our Rental Cars
+                  </a>
+                </p>
+                <div class="flex items-center space-x-4">
+                  <a class="bg-[#f7941d] text-white text-xs font-semibold px-5 py-2 rounded-md hover:bg-[#e07c14] transition"
+                    href="#">
+                    FIND A CAR →
+                  </a>
+                  <a class="text-xs font-semibold text-gray-700 hover:text-[#f7941d]" href="#">
+                    LEARN MORE →
+                  </a>
+                </div>
+                <p class="text-[#f7941d] font-semibold text-lg mt-6">
+                  $13.00
+                  <span class="text-gray-400 font-normal text-xs">
+                    /Per Hours
+                  </span>
+                </p>
+              </div>
+              <div class="md:w-1/2 flex justify-center md:justify-end">
+                <img alt="Orange SUV car side view with gradient orange background"
+                  class="w-full max-w-md object-contain" height="250" src="/assets/images/pngwing.com.png"
+                  width="400" />
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class=" w-3/4 text-start flex items-center justify-center">
+            <div class="flex w-full flex-col md:flex-row items-center justify-between ">
+              <div class="md:full ">
+                <h1 class="font-orbitron text-4xl sm:text-5xl md:text-6xl leading-tight text-gray-900">
+                  DRIVE YOUR
+                  <br />
+                  DREAM
+                </h1>
+                <p class="text-sm text-gray-500">
+                  Unlock Your Journey
+                  <a class="text-[#f7941d] underline hover:text-[#d67a14]" href="#">
+                    with Our Rental Cars
+                  </a>
+                </p>
+                <div class="flex items-center space-x-4">
+                  <a class="bg-[#f7941d] text-white text-xs font-semibold px-5 py-2 rounded-md hover:bg-[#e07c14] transition"
+                    href="#">
+                    FIND A CAR →
+                  </a>
+                  <a class="text-xs font-semibold text-gray-700 hover:text-[#f7941d]" href="#">
+                    LEARN MORE →
+                  </a>
+                </div>
+                <p class="text-[#f7941d] font-semibold text-lg mt-6">
+                  $13.00
+                  <span class="text-gray-400 font-normal text-xs">
+                    /Per Hours
+                  </span>
+                </p>
+              </div>
+              <div class="md:w-1/2 flex justify-center md:justify-end">
+                <img alt="Orange SUV car side view with gradient orange background"
+                  class="w-full max-w-md object-contain" height="250" src="/assets/images/pngwing.com (4).png"
+                  width="400" />
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="w-3/4 text-start flex items-center justify-center">
+            <div class="flex w-full flex-col md:flex-row items-center justify-between ">
+              <div class="md:full ">
+                <h1 class="font-orbitron text-4xl sm:text-5xl md:text-6xl leading-tight text-gray-900">
+                  DRIVE YOUR
+                  <br />
+                  DREAM
+                </h1>
+                <p class="text-sm text-gray-500">
+                  Unlock Your Journey
+                  <a class="text-[#f7941d] underline hover:text-[#d67a14]" href="#">
+                    with Our Rental Cars
+                  </a>
+                </p>
+                <div class="flex items-center space-x-4">
+                  <a class="bg-[#f7941d] text-white text-xs font-semibold px-5 py-2 rounded-md hover:bg-[#e07c14] transition"
+                    href="#">
+                    FIND A CAR →
+                  </a>
+                  <a class="text-xs font-semibold text-gray-700 hover:text-[#f7941d]" href="#">
+                    LEARN MORE →
+                  </a>
+                </div>
+                <p class="text-[#f7941d] font-semibold text-lg mt-6">
+                  $13.00
+                  <span class="text-gray-400 font-normal text-xs">
+                    /Per Hours
+                  </span>
+                </p>
+              </div>
+              <div class="md:w-1/2 flex justify-center md:justify-end">
+                <img alt="Orange SUV car side view with gradient orange background"
+                  class="w-full max-w-md object-contain" height="250" src="/assets/images/pngwing.com (3).png"
+                  width="400" />
+              </div>
+            </div>
+          </div>
+        </swiper-slide>
+        
+      </swiper-container>
+
+      <swiper-container class="mySwiper2 w-1/2" space-between="10" slides-per-view="4" free-mode="true"
+        watch-slides-progress="true">
+        <swiper-slide>
+          <div class="p-8 border-2">
+            <div class="w-20 h-250 bg-white flex items-center justify-center ">
+            <img src="/assets/images/Mercedes-Benz_Star_2022.svg.png" />
+          </div>
+          </div>
+          
+        </swiper-slide>
+        <swiper-slide>
+          <div class="p-8 border-2">
+          <div class="w-20 h-250 bg-white flex items-center justify-center">
+            <img src="/assets/images/porsche-logo-5.png" />
+          </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="p-8 border-2">
+          <div class="w-20 h-250 bg-white flex items-center justify-center">
+            <img src="/assets/images/mustange.png" />
+          </div>
+          </div>
+        </swiper-slide>
+        <swiper-slide>
+          <div class="p-8 border-2">
+          <div class="w-20 h-250 bg-white flex items-center justify-center">
+            <img src="/assets/images/dodge.png" />
+          </div>
+          </div>
+        </swiper-slide>
+
+      </swiper-container>
+
+    </div>
+  </header>
+  ""<section class="flex flex-col items-center justify-center bg-[#f7f7f7] py-10">
+  <div class="w-full max-w-7xl mx-auto mt-10 px-4">
+    <div class="bg-white p-6 grid grid-cols-1 sm:grid-cols-3 gap-6 rounded-xl shadow-lg">
+      <!-- Pickup Location -->
+      <div class="flex flex-col">
+        <label for="pickup-location" class="text-xs text-gray-700 mb-1 font-semibold tracking-wide">
+          PICKUP LOCATION
+        </label>
+        <select id="pickup-location"
+          class="bg-white text-gray-600 text-sm px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#b87f00]">
+          <option>FLORENCE AIRPORT</option>
+        </select>
+      </div>
+
+      <!-- Pickup Date -->
+      <div class="flex flex-col">
+        <label for="pickup-date" class="text-xs text-gray-700 mb-1 font-semibold tracking-wide">
+          PICKUP DATE
+        </label>
+        <div class="relative">
+          <input type="text" id="pickup-date" placeholder="Select Date"
+            class="bg-white text-gray-600 text-sm px-3 py-2 rounded-lg border border-gray-300 w-full focus:outline-none focus:ring-2 focus:ring-[#b87f00]" />
+          <i class="fas fa-calendar-alt absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+        </div>
+      </div>
+
+      <!-- Pickup Time -->
+      <div class="flex flex-col">
+        <label for="pickup-time" class="text-xs text-gray-700 mb-1 font-semibold tracking-wide">
+          PICKUP TIME
+        </label>
+        <div class="flex space-x-2">
+          <select id="pickup-time-hour"
+            class="bg-white text-gray-600 text-sm px-3 py-2 rounded-lg border border-gray-300 w-16 focus:outline-none focus:ring-2 focus:ring-[#b87f00]">
+            <option>00</option>
+          </select>
+          <span class="text-gray-700 text-sm font-semibold mt-2 select-none">:</span>
+          <select id="pickup-time-minute"
+            class="bg-white text-gray-600 text-sm px-3 py-2 rounded-lg border border-gray-300 w-16 focus:outline-none focus:ring-2 focus:ring-[#b87f00]">
+            <option>00</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Drop Off Location -->
+      <div class="flex flex-col">
+        <label for="dropoff-location" class="text-xs text-gray-700 mb-1 font-semibold tracking-wide">
+          DROP OFF LOCATION
+        </label>
+        <select id="dropoff-location"
+          class="bg-white text-gray-600 text-sm px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#b87f00]">
+          <option>FLORENCE AIRPORT</option>
+        </select>
+      </div>
+
+      <!-- Drop Off Date -->
+      <div class="flex flex-col">
+        <label for="dropoff-date" class="text-xs text-gray-700 mb-1 font-semibold tracking-wide">
+          DROP OFF DATE
+        </label>
+        <div class="relative">
+          <input type="text" id="dropoff-date" placeholder="Select Date"
+            class="bg-white text-gray-600 text-sm px-3 py-2 rounded-lg border border-gray-300 w-full focus:outline-none focus:ring-2 focus:ring-[#b87f00]" />
+          <i class="fas fa-calendar-alt absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 pointer-events-none"></i>
+        </div>
+      </div>
+
+      <!-- Drop Off Time -->
+      <div class="flex flex-col">
+        <label for="dropoff-time" class="text-xs text-gray-700 mb-1 font-semibold tracking-wide">
+          DROP OFF TIME
+        </label>
+        <div class="flex space-x-2">
+          <select id="dropoff-time-hour"
+            class="bg-white text-gray-600 text-sm px-3 py-2 rounded-lg border border-gray-300 w-16 focus:outline-none focus:ring-2 focus:ring-[#b87f00]">
+            <option>00</option>
+          </select>
+          <span class="text-gray-700 text-sm font-semibold mt-2 select-none">:</span>
+          <select id="dropoff-time-minute"
+            class="bg-white text-gray-600 text-sm px-3 py-2 rounded-lg border border-gray-300 w-16 focus:outline-none focus:ring-2 focus:ring-[#b87f00]">
+            <option>00</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Category -->
+      <div class="flex flex-col">
+        <label for="category" class="text-xs text-gray-700 mb-1 font-semibold tracking-wide">
+          CATEGORY
+        </label>
+        <select id="category"
+          class="bg-white text-gray-600 text-sm px-3 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#b87f00]">
+          <option>ANY</option>
+        </select>
+      </div>
+
+      <!-- Find Car Button -->
+      <div class="flex items-end">
+        <button type="button"
+          class="bg-[#b87f00] hover:bg-[#a47100] text-white text-sm font-semibold px-6 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#b87f00]">
+          FIND CAR
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="flex flex-col items-center justify-center bg-[#f7f7f7] py-10">
+    <div class="w-1/2   py-6 px-4 sm:px-8 border-b-2 border-black ">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[#2a2a2a] text-center tracking-wide"
+        style="font-family: 'Montserrat', sans-serif;">
+        OUR VEHICLE 
+      </h1>
+    </div>
+    <div class="w-full max-w-7xl mt-8 flex flex-col sm:flex-row justify-center gap-6 px-2 sm:px-0">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-lg max-w-xs w-full relative p-4 flex flex-col">
+        <div class="flex justify-between items-center mb-2">
+          <div class="flex items-center gap-2">
+            <span class="flex items-center gap-1 text-xs font-semibold text-[#b87f00]">
+              <i class="fas fa-star">
+              </i>
+              4.7
+              <span class="text-gray-400">
+                (109)
+              </span>
+            </span>
+            <span class="text-xs bg-green-400 text-white rounded-md px-2 py-0.5 font-semibold">
+              Disponible
+            </span>
+          </div>
+          <button aria-label="Favorite" class="text-gray-500 hover:text-red-500">
+            <i class="far fa-heart">
+            </i>
+          </button>
+        </div>
+        <img alt="Red side view of a Ford Focus car" class="w-full h-28 object-contain mb-4" height="120"
+          src="/assets/images/cars/ford/focus/focus.png" width="300" />
+        <div class="text-xs text-gray-500 font-semibold mb-0.5">
+          FORD
+        </div>
+        <div class="font-extrabold text-sm mb-1">
+          FOCUS
+        </div>
+        <div class="text-sm font-semibold text-right text-gray-800 mb-4">
+          $500.00
+          <span class="text-xs font-normal">
+            /hora
+          </span>
+        </div>
+        <div class="flex justify-between text-xs text-gray-600 font-semibold">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-sliders-h">
+            </i>
+            <span>
+              Manual
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-tachometer-alt">
+            </i>
+            <span>
+              Kilometraje il...
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-user-friends">
+            </i>
+            <span>
+              5
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-lg max-w-xs w-full relative p-4 flex flex-col">
+        <div class="flex justify-between items-center mb-2">
+          <div class="flex items-center gap-2">
+            <span class="flex items-center gap-1 text-xs font-semibold text-[#b87f00]">
+              <i class="fas fa-star">
+              </i>
+              4.6
+              <span class="text-gray-400">
+                (58)
+              </span>
+            </span>
+            <span class="text-xs bg-green-400 text-white rounded-md px-2 py-0.5 font-semibold">
+              Disponible
+            </span>
+          </div>
+          <button aria-label="Favorite" class="text-red-500">
+            <i class="fas fa-heart">
+            </i>
+          </button>
+        </div>
+        <img alt="White front side view of a Nissan Sentra car" class="w-full h-28 object-contain mb-4" height="120"
+          src="/assets/images/cars/nissan/sentra/sentra.png" width="300" />
+        <div class="text-xs text-gray-500 font-semibold mb-0.5">
+          NISSAN
+        </div>
+        <div class="font-extrabold text-sm mb-1">
+          SENTRA
+        </div>
+        <div class="text-sm font-semibold text-right text-gray-800 mb-4">
+          $420.00
+          <span class="text-xs font-normal">
+            /hora
+          </span>
+        </div>
+        <div class="flex justify-between text-xs text-gray-600 font-semibold">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-sliders-h">
+            </i>
+            <span>
+              Manual
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-tachometer-alt">
+            </i>
+            <span>
+              Kilometraje il...
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-user-friends">
+            </i>
+            <span>
+              5
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-lg max-w-xs w-full relative p-4 flex flex-col">
+        <div class="flex justify-between items-center mb-2">
+          <div class="flex items-center gap-2">
+            <span class="flex items-center gap-1 text-xs font-semibold text-[#b87f00]">
+              <i class="fas fa-star">
+              </i>
+              4.5
+              <span class="text-gray-400">
+                (77)
+              </span>
+            </span>
+            <span class="text-xs bg-red-400 text-white rounded-md px-2 py-0.5 font-semibold">
+              No disponible
+            </span>
+          </div>
+          <button aria-label="Favorite" class="text-gray-500 hover:text-red-500">
+            <i class="far fa-heart">
+            </i>
+          </button>
+        </div>
+        <img alt="Red front side view of a Kia Forte car" class="w-full h-28 object-contain mb-4" height="120"
+          src="/assets/images/cars/kia/forte/forte.png" width="300" />
+        <div class="text-xs text-gray-500 font-semibold mb-0.5">
+          KIA
+        </div>
+        <div class="font-extrabold text-sm mb-1">
+          FORTE
+        </div>
+        <div class="text-sm font-semibold text-right text-gray-800 mb-4">
+          $600.00
+          <span class="text-xs font-normal">
+            /hora
+          </span>
+        </div>
+        <div class="flex justify-between text-xs text-gray-600 font-semibold">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-sliders-h">
+            </i>
+            <span>
+              Manual
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-tachometer-alt">
+            </i>
+            <span>
+              Kilometraje il...
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-user-friends">
+            </i>
+            <span>
+              5
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w-full max-w-7xl mt-8 flex flex-col sm:flex-row justify-center gap-6 px-2 sm:px-0">
+      <!-- Card 1 -->
+      <div class="bg-white rounded-xl shadow-lg max-w-xs w-full relative p-4 flex flex-col">
+        <div class="flex justify-between items-center mb-2">
+          <div class="flex items-center gap-2">
+            <span class="flex items-center gap-1 text-xs font-semibold text-[#b87f00]">
+              <i class="fas fa-star">
+              </i>
+              4.7
+              <span class="text-gray-400">
+                (109)
+              </span>
+            </span>
+            <span class="text-xs bg-green-400 text-white rounded-md px-2 py-0.5 font-semibold">
+              Disponible
+            </span>
+          </div>
+          <button aria-label="Favorite" class="text-gray-500 hover:text-red-500">
+            <i class="far fa-heart">
+            </i>
+          </button>
+        </div>
+        <img alt="Red side view of a Ford Focus car" class="w-full h-28 object-contain mb-4" height="120"
+          src="/assets/images/cars/ford/focus/focus.png" width="300" />
+        <div class="text-xs text-gray-500 font-semibold mb-0.5">
+          FORD
+        </div>
+        <div class="font-extrabold text-sm mb-1">
+          FOCUS
+        </div>
+        <div class="text-sm font-semibold text-right text-gray-800 mb-4">
+          $500.00
+          <span class="text-xs font-normal">
+            /hora
+          </span>
+        </div>
+        <div class="flex justify-between text-xs text-gray-600 font-semibold">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-sliders-h">
+            </i>
+            <span>
+              Manual
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-tachometer-alt">
+            </i>
+            <span>
+              Kilometraje il...
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-user-friends">
+            </i>
+            <span>
+              5
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white rounded-xl shadow-lg max-w-xs w-full relative p-4 flex flex-col">
+        <div class="flex justify-between items-center mb-2">
+          <div class="flex items-center gap-2">
+            <span class="flex items-center gap-1 text-xs font-semibold text-[#b87f00]">
+              <i class="fas fa-star">
+              </i>
+              4.6
+              <span class="text-gray-400">
+                (58)
+              </span>
+            </span>
+            <span class="text-xs bg-green-400 text-white rounded-md px-2 py-0.5 font-semibold">
+              Disponible
+            </span>
+          </div>
+          <button aria-label="Favorite" class="text-red-500">
+            <i class="fas fa-heart">
+            </i>
+          </button>
+        </div>
+        <img alt="White front side view of a Nissan Sentra car" class="w-full h-28 object-contain mb-4" height="120"
+          src="/assets/images/cars/nissan/sentra/sentra.png" width="300" />
+        <div class="text-xs text-gray-500 font-semibold mb-0.5">
+          NISSAN
+        </div>
+        <div class="font-extrabold text-sm mb-1">
+          SENTRA
+        </div>
+        <div class="text-sm font-semibold text-right text-gray-800 mb-4">
+          $420.00
+          <span class="text-xs font-normal">
+            /hora
+          </span>
+        </div>
+        <div class="flex justify-between text-xs text-gray-600 font-semibold">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-sliders-h">
+            </i>
+            <span>
+              Manual
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-tachometer-alt">
+            </i>
+            <span>
+              Kilometraje il...
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-user-friends">
+            </i>
+            <span>
+              5
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white rounded-xl shadow-lg max-w-xs w-full relative p-4 flex flex-col">
+        <div class="flex justify-between items-center mb-2">
+          <div class="flex items-center gap-2">
+            <span class="flex items-center gap-1 text-xs font-semibold text-[#b87f00]">
+              <i class="fas fa-star">
+              </i>
+              4.5
+              <span class="text-gray-400">
+                (77)
+              </span>
+            </span>
+            <span class="text-xs bg-red-400 text-white rounded-md px-2 py-0.5 font-semibold">
+              No disponible
+            </span>
+          </div>
+          <button aria-label="Favorite" class="text-gray-500 hover:text-red-500">
+            <i class="far fa-heart">
+            </i>
+          </button>
+        </div>
+        <img alt="Red front side view of a Kia Forte car" class="w-full h-28 object-contain mb-4" height="120"
+          src="/assets/images/cars/kia/forte/forte.png" width="300" />
+        <div class="text-xs text-gray-500 font-semibold mb-0.5">
+          KIA
+        </div>
+        <div class="font-extrabold text-sm mb-1">
+          FORTE
+        </div>
+        <div class="text-sm font-semibold text-right text-gray-800 mb-4">
+          $600.00
+          <span class="text-xs font-normal">
+            /hora
+          </span>
+        </div>
+        <div class="flex justify-between text-xs text-gray-600 font-semibold">
+          <div class="flex items-center gap-1">
+            <i class="fas fa-sliders-h">
+            </i>
+            <span>
+              Manual
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-tachometer-alt">
+            </i>
+            <span>
+              Kilometraje il...
+            </span>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="fas fa-user-friends">
+            </i>
+            <span>
+              5
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>
